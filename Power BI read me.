@@ -1,0 +1,33 @@
+Chocolate Shipments Sales Analysis – Power BI Dashboard
+
+An interactive Power BI report that analyses chocolate shipment data (2023 onwards) to track sales, costs, profit, shipment volumes, and sales-team performance across products and geographies.
+
+📌** Project Overview**
+
+A chocolate manufacturer ships products to multiple countries through a team of sales people. This project turns the raw shipment records into a dashboard that answers questions such as:
+
+Which products and countries generate the most revenue and profit?
+How do shipments, boxes sold and amount trend month by month?
+Which sales people perform best (amount, boxes, profit %)?
+What is the typical shipment size (boxes per shipment)?
+
+
+Sheet	Description	Key columns
+Shipments (~25,000 rows)	Fact table, one row per shipment	ShipmentID, SPID, PID, GID, Shipdate, Amount, Boxes, Order_Status
+Dimension Data	Lookup tables for products, locations and people	Product, Category, Cost_per_box, PID · Geo, Region, GID · Sales_person, Team, Picture, SPID
+Calendar	Date table	cal_date, Month_num, month_name, year, weekday_num, weekday_name
+Measure	Meaning
+Total Amount	= Sum of shipment revenue
+Total Boxes =	Sum of boxes shipped
+Shipment Count =	Number of shipments
+Total Costs=	Boxes × cost per box
+Total Profit =	Total Amount − Total Costs
+Profit % =	Total Profit ÷ Total Amount
+Amount per Box	= Total Amount ÷ Total Boxes
+Key Insights
+
+Add your own findings here, for example:
+
+Top-performing product / country by profit
+Month with the highest shipments
+Best sales person by profit %
